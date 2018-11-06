@@ -1,5 +1,5 @@
 // select canvas element
-const canvas = document.getElementById("pong");
+const canvas = document.querySelector("#pong");
 
 // getContext of canvas = methods and properties to draw and do a lot of thing to the canvas
 const context = canvas.getContext('2d');
@@ -174,6 +174,7 @@ function render(){
 
     drawArc(ball.x, ball.y, ball.radius, ball.color);
 }
+
 function game(){
     update();
     render();
